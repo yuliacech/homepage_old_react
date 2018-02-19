@@ -1,0 +1,131 @@
+.container-terminal {
+    height: 500px;
+    background : #1D1D1D;
+    color: #18FF62 !important;
+
+    font-family: 'DosFont', serif;
+    padding-left: 0;
+    padding-right: 0;
+    border: 1px solid #CCCCCC;
+}
+
+.screen {
+    overflow : hidden;
+    z-index : 3;
+}
+
+.screen:before {
+    content : '';
+    width : 100%;
+    height : 500px;
+    position : absolute;
+
+    background-color: #000;
+    background: linear-gradient(#fff 50%, #000 50%);
+    background-size: 100% 4px;
+    background-repeat: repeat-y;
+
+    opacity : .14;
+    box-shadow : inset 0 0 10px 10px rgba(0, 0, 0, .8);
+    border-radius : 20px;
+    z-index : 10;
+
+    -webkit-animation: pulse 5s linear infinite;
+    -moz-animation: pulse 5s linear infinite;
+    -ms-animation: pulse 5s linear infinite;
+    animation: pulse 5s linear infinite;
+}
+
+.content {
+    margin: 2rem;
+    display:flex;
+}
+
+.content li:first-child {
+    font-size: 2rem;
+}
+.content li {
+    font-size: 1rem;
+}
+
+@media (min-width: 576px) { .content li:first-child {
+    font-size: 2.5rem;
+}
+    .content li {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 768px) {
+    .container-terminal {
+        height: 400px;
+
+    }
+    .screen::before {
+        height: 400px;
+    }
+}
+
+.line-start {
+    display: inline-block;
+    width: 56px;
+    font-size: 2.5rem;
+}
+.line-start::before {
+    content: '>_';
+}
+.cursor {
+    border-right: .15em solid #18FF62;
+    animation:blinking-cursor .75s step-end infinite;
+}
+@keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color: #18FF62; }
+}
+
+
+@font-face {
+    font-family : DosFont;
+    font-weight : normal;
+    font-style : normal;
+    src : url('./assets/font/dos.ttf') format('truetype');
+}
+.fakeButtons {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    background-color: #ff3b47;
+    border: 1px solid #9d252b;
+    display: inline-block;
+}
+
+.fakeMinimize {
+    left: 11px;
+    background-color: #ffc100;
+    border-color: #9d802c;
+}
+
+.fakeZoom {
+    left: 16px;
+    background-color: #00d742;
+    border-color: #049931;
+}
+.top-terminal-bar {
+    height: 32px;
+    margin: 0;
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
+
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f7f7f7 0%, #B8B8B8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#B8B8B8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f7f7f7 0%,#B8B8B8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f7f7f7 0%,#B8B8B8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f7f7f7 0%,#B8B8B8 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f7f7f7 0%,#B8B8B8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#B8B8B8',GradientType=0 ); /* IE6-9 */
+}
+
+
