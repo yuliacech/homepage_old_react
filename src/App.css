@@ -68,7 +68,7 @@ ul {
 .btn-outline-dark {
     border-color: #607D8B;
     border-radius: 0;
-    width: 130px;
+    width: 150px;
     text-align: center;
 }
 
@@ -133,6 +133,13 @@ ul {
     height: 32px;
 }
 
+.mw-700px {
+    max-width: 700px;
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.5);
+}
 
 
 

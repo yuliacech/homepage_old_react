@@ -21,16 +21,16 @@ class About extends Component {
                         Belgium with my partner. At the moment, we are planning our next adventurous move.
                     </p>
                     <h3>Goal</h3>
-                    <p>
-                        <h5>
+
+                    <h5>
                         In my day-to-day job, I appreciate the opportunity
                         of implementing
                         useful programs that help people do their job and
                         make their life easier.
                         With my skills as software developer, I would like to
                         impact community in a positive way.
-                        </h5>
-                    </p>
+                    </h5>
+
                 </div>
             </section>
         );
