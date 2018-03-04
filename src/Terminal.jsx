@@ -43,7 +43,6 @@ class Terminal extends Component {
     }
     render() {
         const listItems = this.state.lines.map((line, index) => {
-                console.log(line);
                 if (index === this.state.lines.length -1) {
                     return (<li><span className={"line-start"}></span>{line.join('')}<span className={"cursor"}></span></li>)
                 }

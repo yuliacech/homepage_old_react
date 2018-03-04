@@ -20,6 +20,7 @@ section a {
     font-weight: 700;
     text-decoration: none;
     color: #607D8B;
+    white-space: nowrap;
 }
 
 section a:hover {
@@ -80,7 +81,7 @@ ul {
 
 .container-certificate-outer {
     max-width: 500px;
-    min-height: 200px;
+    height: 300px;
     padding: 5px;
     border: 10px solid #BDBDBD;
     margin: 16px auto;
@@ -123,14 +124,8 @@ ul {
     width: 30%;
 }
 
-.centered-navbar {
-    max-width: 800px;
-    margin: auto;
-}
-
 .contact-logo {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
 }
 
 .mw-700px {
@@ -141,8 +136,40 @@ ul {
     color: rgba(255, 255, 255, 0.5);
 }
 
+#navbar-toggle-cbox:checked ~ .collapse {
+    display:block;
+}
 
+#navbar-toggle-cbox:checked ~ .navbar-toggler-label {
+    border-color: rgba(255, 255, 255, 1);
+}
 
+#navbar-toggle-cbox {
+    display: none;
+}
+
+.navbar-toggler-label {
+    -webkit-appearance: none !important;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: transparent;
+    border-radius: 0.25rem;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+
+.horizontal-list li a {
+    display: inline;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+}
+
+.horizontal-list li {
+     vertical-align: bottom;
+ }
 
 
 

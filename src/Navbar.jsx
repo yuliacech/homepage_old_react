@@ -18,11 +18,14 @@ class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark default-primary-color sticky-top" id="navbar">
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
 
-                <div className="collapse navbar-collapse centered-navbar" id="navbarSupportedContent">
+                <input type="checkbox" id="navbar-toggle-cbox" />
+                    <label htmlFor="navbar-toggle-cbox" className="navbar-toggler hidden-lg-up navbar-toggler-label"
+                           type="button"
+                           aria-controls="collapsable-navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </label>
+                <div className="collapse navbar-collapse" id={'collapsable-navbar'}>
                     <Scrollspy className="navbar-nav mr-auto"
                                items={ ['banner', 'experience', 'projects', 'education', 'skills', 'about', 'contact'] }
                                currentClassName="active">
@@ -48,8 +51,8 @@ class Navbar extends Component {
                             <a className={"nav-link"} href="#contact">Contact</a>
                         </li>
                     </Scrollspy>
-                    <ul className="navbar-nav mr-auto">
-                        <li className={"nav-item"}>
+                    <ul className="horizontal-list text-left my-3 my-lg-0 text-lg-right">
+                        <li className="nav-item list-inline-item">
                             <a aria-label="GitHub Profile"
                                className="nav-link"
                                href="https://github.com/solid-flow"
@@ -61,7 +64,7 @@ class Navbar extends Component {
                                 </span>
                             </a>
                         </li>
-                        <li className={"nav-item"}>
+                        <li className={"nav-item list-inline-item"}>
                             <a aria-label="Twitter Profile"
                                className="nav-link"
                                href="https://twitter.com/solid_flow_com"
@@ -73,7 +76,7 @@ class Navbar extends Component {
                                 </span>
                             </a>
                         </li>
-                        <li className={"nav-item"}>
+                        <li className={"nav-item list-inline-item"}>
                             <a aria-label="LinkedIn Profile"
                                className="nav-link"
                                href="https://www.linkedin.com/in/ichinnorbu/"
@@ -86,7 +89,7 @@ class Navbar extends Component {
                             </a>
                         </li>
 
-                        <li className={"nav-item"}>
+                        <li className={"nav-item list-inline-item"}>
                             <a aria-label="CV download link"
                                className="nav-link"
                                href="CV_Ichin-Norbu.pdf"
@@ -96,7 +99,7 @@ class Navbar extends Component {
                                 </span>
                             </a>
                         </li>
-                        <li className={"nav-item"}>
+                        <li className={"nav-item list-inline-item"}>
                             <a aria-label="Email link"
                                className="nav-link"
                                href="mailto:info@solid-flow.com"

@@ -11,7 +11,7 @@ class Contact extends Component {
 
                             <h4>Contact me about exciting opportunities in web development
                                 at <a href={"mailto:info@solid-flow.com"} target="_blank">info@solid-flow.com</a> or
-                                using the contact form below.
+                                using the form below.
                             </h4>
 
                         </div>
