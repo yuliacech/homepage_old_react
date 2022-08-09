@@ -1,7 +1,9 @@
 {
   "name": "solid-flow.com",
   "version": "0.1.0",
-  "private": true,
+  "engines": {
+    "node": "<9"
+  },
   "dependencies": {
     "bootstrap": "4.0.0",
     "react": "^16.2.0",
